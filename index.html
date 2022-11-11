@@ -14,5 +14,11 @@
     ></script>
     <script src="js/script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div id="root">
+      <h1 :class="{secondColor: isSecond}" class="title">{{ `${title}` }}</h1>
+      <button @click="colorSwap">Swap Title Color!</button>
+      <img :src="img" alt="" />
+    </div>
+  </body>
 </html>
